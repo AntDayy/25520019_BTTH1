@@ -4,7 +4,9 @@
 
 using namespace std;
 
-// Dinh nghia kieu du lieu ngay
+/*
+Dinh nghia kieu du lieu Ngay gom co ngay thang nam
+*/
 struct Ngay
 {
     int ngay;
