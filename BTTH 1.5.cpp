@@ -5,7 +5,9 @@
 
 using namespace std;
 
-// Dinh nghia kieu du lieu hoc sinh
+/*
+Dinh nghia kieu du lieu HocSinh gom co ho ten, diem toan, diem van va diem trung binh
+*/
 struct HocSinh
 {
     string hoTen;
