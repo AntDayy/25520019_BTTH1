@@ -5,7 +5,11 @@
 
 using namespace std;
 
-// ham nhap so nguyen, neu nguoi dung nhap ktdb hoac chuoi thi bat nhap lai
+/*
+Kiem tra nguoi dung co nhap dung hay khong
+Nhap ki tu dac biet, chuoi, chu cai khong hop le thi bat nhap lai
+Nhap dung thi tra ve value
+*/
 int nhapSoNguyen(const string &error)
 {
     int value;
@@ -18,7 +22,7 @@ int nhapSoNguyen(const string &error)
         }
         else
         {
-            cout << " [Loi] Vui long chi nhap so nguyen!\n";
+            cout << "Vui long chi nhap so nguyen!\n";
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -26,7 +30,10 @@ int nhapSoNguyen(const string &error)
     return value;
 }
 
-// ham nhap phan so (kiem tra mau khac 0)
+/*
+Ham nhap phan so
+Kiem tra mau so = 0 thi bat nhap lai
+*/
 void nhapPhanSo(int &tuSo, int &mauSo)
 {
     tuSo = nhapSoNguyen("Nhap tu so: ");
@@ -44,7 +51,10 @@ void nhapPhanSo(int &tuSo, int &mauSo)
     }
 }
 
-// ham rut gon phan so
+/*
+Ham rut gon phan so
+Doi dau cua phan so khi mau so < 0
+*/
 void rutGonPhanSo(int &tuSo, int &mauSo)
 {
     int ucln = gcd(tuSo, mauSo);
@@ -58,7 +68,11 @@ void rutGonPhanSo(int &tuSo, int &mauSo)
     }
 }
 
-// ham in ket qua
+/*
+Ham in ket qua
+Neu tu so = 0 thi cout 0
+Neu mau so = 1 thi cout tu so
+*/
 void xuatPhanSo(int tuSo, int mauSo)
 {
     if (tuSo == 0)
