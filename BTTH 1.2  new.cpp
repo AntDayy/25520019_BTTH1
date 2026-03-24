@@ -5,7 +5,9 @@
 
 using namespace std;
 
-// Dinh nghia kieu du lieu phan so
+/*
+Dinh nghia kieu du lieu phan so gom co tu so va mau so
+*/
 struct PhanSo
 {
     int tuSo;
