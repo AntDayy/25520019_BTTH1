@@ -50,6 +50,7 @@ void rutGonPhanSo(int &tuSo, int &mauSo)
     int ucln = gcd(tuSo, mauSo);
     tuSo /= ucln;
     mauSo /= ucln;
+    // doi dau phan so
     if (mauSo < 0)
     {
         tuSo = -tuSo;
